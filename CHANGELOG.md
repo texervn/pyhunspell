@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.2 (2017-02-11)
+### Improvement
+- Add classifiers on the package
+
+### Bug fixes
+- Install on CentOS should not fail anymore
+
+
 ## 0.4.1 (2016-03-31)
 ### Improvement
 - Exception HunSpellError now exists and is catchable (issue #21)
