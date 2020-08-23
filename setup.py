@@ -40,8 +40,8 @@ elif platform.system() == "Darwin":
     main_module_kwargs['extra_compile_args'] = ['-Wall']
 else:
     main_module_kwargs['define_macros'] = [('_LINUX', None)]
-    main_module_kwargs['libraries'] = ['hunspell']
-    main_module_kwargs['include_dirs'] = get_linux_include_dirs() + ['/usr/include/hunspell']
+    main_module_kwargs['libraries'] = ['hunspell-1.7']
+    main_module_kwargs['include_dirs'] = get_linux_include_dirs() + ['/usr/local/include/hunspell']
     main_module_kwargs['extra_compile_args'] = ['-Wall']
 
 main = Extension('hunspell', **main_module_kwargs)
